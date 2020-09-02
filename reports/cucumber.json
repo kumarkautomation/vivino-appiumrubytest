@@ -1,0 +1,307 @@
+[
+  {
+    "uri": "features/scenarios/profile/vivino_profile.feature",
+    "id": "vivino-profile",
+    "keyword": "Feature",
+    "name": "Vivino profile",
+    "description": "",
+    "line": 2,
+    "tags": [
+      {
+        "name": "@profile",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Navigate to vivino home screen",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10617184000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I verify the vivino \"home\" screen",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 284978000
+            }
+          }
+        ]
+      },
+      {
+        "id": "vivino-profile;verify-vivino-profile",
+        "keyword": "Scenario",
+        "name": "Verify vivino profile",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@profile",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I navigate through tour screens",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/vivino_tour_steps.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3510761000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I validate tour screens",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/vivino_tour_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 806562000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I navigate to profile screen",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/vivino_profile_steps.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58194000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify the vivino \"profile\" screen",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8601152000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 370216000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/scenarios/tour/vivino_tour.feature",
+    "id": "vivino-tour",
+    "keyword": "Feature",
+    "name": "Vivino tour",
+    "description": "",
+    "line": 2,
+    "tags": [
+      {
+        "name": "@tour",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Navigate to vivino home screen",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9483883000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I verify the vivino \"home\" screen",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 289059000
+            }
+          }
+        ]
+      },
+      {
+        "id": "vivino-tour;verify-vivino-tours",
+        "keyword": "Scenario",
+        "name": "Verify vivino tours",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@tour",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I navigate through tour screens",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/vivino_tour_steps.rb:2"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `key' for [:id, \"vivino.web.app.beta:id/next\"]:Array (NoMethodError)\n./features/helpers/utilities.rb:15:in `rescue in block in element'\n./features/helpers/utilities.rb:11:in `block in element'\n./features/step_definitions/vivino_tour_steps.rb:6:in `block (2 levels) in <top (required)>'\n./features/step_definitions/vivino_tour_steps.rb:6:in `times'\n./features/step_definitions/vivino_tour_steps.rb:6:in `/^I navigate through tour screens$/'\nfeatures/scenarios/tour/vivino_tour.feature:8:in `When I navigate through tour screens'",
+              "duration": 24129510000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I validate tour screens",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/vivino_tour_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 610179000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "Navigate to vivino home screen",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9617185000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "I verify the vivino \"home\" screen",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 256045000
+            }
+          }
+        ]
+      },
+      {
+        "id": "vivino-tour;verify-vivino-tours",
+        "keyword": "Scenario",
+        "name": "Verify vivino tours",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@tour",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I navigate through tour screens",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/vivino_tour_steps.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3513948000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I validate tour screens",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/vivino_tour_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 785906000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 374226000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
